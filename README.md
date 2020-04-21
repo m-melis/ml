@@ -95,7 +95,7 @@ Part 1 - [Python basics](https://github.com/unica-ml/ml/blob/master/slides/lab/m
 
 Part 2 - [Data Sampling, Visualization, Learning and Classification](https://github.com/unica-ml/ml/blob/master/slides/lab/ml-lab-02.pdf) ([Notebook 2](https://github.com/unica-ml/ml/blob/master/notebooks/lab02.ipynb))
 
-Part 3 - Performance Evaluation (Code22)
+Part 3 - Performance Evaluation (Code)
 
 Part 4 - Parameter Estimation (Code)
 
