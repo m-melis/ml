@@ -6,5 +6,8 @@ on:
 
 jobs:
   deploy:
-    run: |
-      curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" https://api.github.com/repos/m-melis/unica-ml.github.io/dispatches --data '{"event_type": "build_application"}'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deployment
+        run: |
+          curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" https://api.github.com/repos/m-melis/unica-ml.github.io/dispatches --data '{"event_type": "build_application"}'
